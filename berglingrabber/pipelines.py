@@ -14,7 +14,7 @@ class BerglingrabberPipeline(object):
         rss_item = PyRSS2Gen.RSSItem(
             title = item['title'],
             link = item['image_url'],
-            description = '&lt;img src="{}" title="{}" /&gt;'.format(
+            description = '<img src="{}" title="{}" />'.format(
                 item['image_url'], "Berglin " + item['title']),
             guid = item['uuid'])
         self.rss_items.append(rss_item)
